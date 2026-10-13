@@ -1,0 +1,204 @@
+/* ============================================
+   HEADER STYLES - ADAPTIVE
+   ============================================ */
+
+.no-scroll {
+   overflow-y: hidden !important;
+}
+
+/* === Header Title Section === */
+.header__title,
+.video-section {
+   background-color: #00283b;
+   padding: 0;
+}
+
+/* === Header Top Bar (if used) === */
+.header__top {
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+   min-height: 56px;
+   background-color: #00283b;
+   color: #fff;
+   display: flex;
+   justify-content: space-between;
+   padding: 0 16px;
+   align-items: center;
+   font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+   font-weight: 700;
+}
+
+.header__top-left {
+   display: flex;
+   align-items: center;
+}
+
+.header__top-left-logo {
+   background-color: #ff3640;
+   padding: 12px 16px;
+   clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+   margin-left: -16px;
+   transition: background-color 0.3s ease;
+}
+
+.header__top-left-logo:hover {
+   background-color: #ff5e66;
+}
+
+.header__top-left a {
+   transition: background-color 0.3s ease;
+   padding: 14px 16px;
+   clip-path: polygon(12% 0, 100% 0, 88% 100%, 0 100%);
+}
+
+.header__top-left a:hover {
+   background-color: rgba(255, 255, 255, 0.1);
+}
+
+.logo-main:hover {
+   background-color: transparent !important;
+}
+
+/* Live Indicator */
+.online {
+   border-bottom: 2px solid #ff3640;
+   position: relative;
+   padding-left: 24px !important;
+}
+
+.online::before {
+   content: "";
+   position: absolute;
+   left: 8px;
+   top: 50%;
+   transform: translateY(-50%);
+   width: 8px;
+   height: 8px;
+   background-color: #ff3640;
+   border-radius: 50%;
+   animation: headerPulse 1.5s infinite;
+}
+
+@keyframes headerPulse {
+   0%, 100% {
+      transform: translateY(-50%) scale(0.85);
+      box-shadow: 0 0 0 0 rgba(255, 54, 64, 0.7);
+   }
+   70% {
+      transform: translateY(-50%) scale(1);
+      box-shadow: 0 0 0 10px transparent;
+   }
+}
+
+.header__top-right {
+   display: flex;
+   align-items: center;
+   gap: 20px;
+}
+
+/* === Header Bottom Navigation === */
+.header__bottom {
+   display: flex;
+   align-items: center;
+   overflow-x: auto;
+   -webkit-overflow-scrolling: touch;
+   scrollbar-width: none;
+   -ms-overflow-style: none;
+}
+
+.header__bottom::-webkit-scrollbar {
+   display: none;
+}
+
+.header__bottom nav {
+   width: 100%;
+}
+
+.header__bottom-list {
+   display: flex;
+   justify-content: flex-start;
+   width: max-content;
+   min-width: 100%;
+   gap: 0;
+   align-items: center;
+   color: #00283b;
+   font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+   font-weight: 400;
+   padding: 0 16px;
+}
+
+.header__bottom-list a {
+   transition: background-color 0.2s ease;
+   padding: 20px 12px;
+   display: inline-block;
+   position: relative;
+   white-space: nowrap;
+   font-size: 0.9375rem;
+}
+
+.header__bottom-list a:hover {
+   background-color: rgba(0, 40, 59, 0.08);
+}
+
+.header__bottom-list a::after {
+   content: "•";
+   position: absolute;
+   right: -4px;
+   color: #c4c4c4;
+}
+
+.header__bottom-list a:last-child::after {
+   display: none;
+}
+
+/* ============================================
+   RESPONSIVE BREAKPOINTS
+   ============================================ */
+
+/* Mobile - Hide right section */
+@media (max-width: 479px) {
+   .header__top-right {
+      display: none;
+   }
+   
+   .header__top {
+      justify-content: center;
+   }
+   
+   .header__bottom-list a {
+      padding: 16px 10px;
+      font-size: 0.875rem;
+   }
+}
+
+/* Tablet */
+@media (min-width: 480px) and (max-width: 767px) {
+   .header__top-right {
+      gap: 16px;
+   }
+   
+   .header__bottom-list {
+      justify-content: center;
+   }
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+   .header__bottom-list {
+      justify-content: space-around;
+      width: 100%;
+   }
+   
+   .header__bottom-list a {
+      padding: 24px 16px;
+   }
+}
+
+@media (min-width: 1024px) {
+   .header__top {
+      padding: 0 24px;
+   }
+   
+   .header__top-right {
+      gap: 30px;
+   }
+}

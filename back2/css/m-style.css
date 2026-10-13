@@ -1,0 +1,412 @@
+* {
+    width: auto;
+    height: auto;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+    background: #fff;
+}
+
+html, body {
+    height: 100%;
+    min-height: 100%
+}
+
+body .m-show {
+    display: block !important;
+}
+
+.m-hide, .block1__list, .block6__doc {
+    display: none
+}
+
+.block1, .block3, .block4, .block5, .block6, .block7, .block8, .block9, .block10, .block11, .block12, 
+.block14, .block15, .block16, .block17, .block18, .block19, .block20, .block21, .block22, .block23, .block24, .block25, .block7--mob {
+    width: 100%;
+    background: none;
+    min-height: 50px;
+    height: auto;
+    padding: 30px 0 20px 0;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    max-width: 100%;
+    float: none
+}
+
+.block1, .block14 {
+    background: url(../images/img-m-bg.jpg) no-repeat center bottom;
+    background-size: cover
+}
+
+.block1__cap, .block2__cap, .block3__cap, .block4__cap, .block5__cap, .block6__cap, .block7__cap, .block8__cap, .block9__cap, .block10__cap, .block11__cap, .block12__cap, .block14__cap {
+    font-size: 27px;
+    line-height: 30px;
+    padding: 0;
+}
+
+.logo {
+    font-size: 61px;
+    line-height: 68px;
+    display: block;
+    float: left
+}
+
+.leave, .block1__prod .leave, .block14__prod .leave {
+    width: 130px;
+    height: 144px;
+    right: -83px;
+    bottom: 20px;
+    display: block;
+    background: url(../images/img-m-leave.png) no-repeat left top;
+}
+
+.block2__cap {
+    float: none;
+    text-align: center;
+    width: 94%;
+    margin: 0 auto;
+    padding: 35px 0 20px 0;
+    max-width: 100%
+}
+
+.block2 .centering {
+    max-width: 480px
+}
+
+.block2 .redText {
+    color: #ff5d55
+}
+
+.sale {
+    width: 67px;
+    height: 69px;
+    font-size: 13px;
+    line-height: 18px;
+    background: url(../images/img-m-sale.png) no-repeat left top;
+}
+
+.block1 .sale {
+    left: 80px;
+    top: -25px;
+}
+
+.block2__info {
+    margin: 0 auto 30px auto;
+    max-width: 90%
+}
+
+.sale__numb {
+    font-size: 10px;
+    margin: 15px 0 0 0
+}
+
+.block1__smallCap {
+    font-size: 18px;
+    line-height: 21px;
+    max-width: 50%;
+    margin: 29px 0 0 0;
+    font-style: italic
+}
+
+.block1__prices {
+    width: 320px;
+    max-width: 94%;
+    position: static;
+    margin: 20px auto
+}
+
+.block1 .button {
+    margin-top: 15px
+}
+
+.block1 .prod {
+    position: relative;
+    float: right;
+    margin: -228px 0 7px 0;
+}
+
+.oldPricesText {
+    text-align: left
+}
+
+.js_new_price_curs {
+    text-align: left;
+    font-size: 18px
+}
+
+.centering {
+    width: 320px;
+    max-width: 94%
+}
+
+.table {
+    max-width: 100%
+}
+
+.block9__img {
+    width: 135px;
+    height: 86px;
+    margin: 0;
+    background: url(../images/img-m-block9__img.jpg) no-repeat left top;
+}
+
+.block9__img--2 {
+    background-position: right top;
+}
+
+.block9__img--3 {
+    background-position: left bottom;
+}
+
+.block9__img--4 {
+    background-position: right bottom;
+}
+
+.m-centText {
+    text-align: center
+}
+
+.block5__set {
+    width: 100%;
+    padding-bottom: 20px
+}
+
+.cell--50 {
+    width: 100%
+}
+
+.block0 .centering {
+    width: 96%
+}
+
+.prod {
+    width: 139px;
+    right: -5px;
+    top: 148px;
+    height: 198px;
+    /* background: url(../images/prod.png) no-repeat left top; */
+}
+
+h1, .block5__varikosette {
+    max-width: 100%;
+    font-size: 43px !important;
+    padding-top: 0;
+    line-height: 43px !important;
+}
+
+.block1 {
+    padding-top: 11px;
+    padding-bottom: 1px;
+}
+
+.block1__cap {
+    max-width: 100%;
+    padding-top: 0
+}
+
+.block2__rightcell {
+    border: none;
+    color: #fff;
+    background: #9f3c37;
+    padding: 0
+}
+
+.block2__list {
+    max-width: 480px;
+    width: 90%;
+    margin: 0 auto;
+    float: none
+}
+
+.block2__list__li {
+    padding: 0 0 11px 102px
+}
+
+.block2__img {
+    width: 85px;
+    height: 74px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    background: url(../images/img-m-block2__img.jpg);
+}
+
+.block2__img--2 {
+    background-position: center center
+}
+
+.block2__img--3 {
+    background-position: left bottom
+}
+
+.button {
+    width: 280px;
+    min-height: 50px
+}
+
+.button__text {
+    min-height: 50px;
+}
+
+.block6__list {
+    padding-right: 0
+}
+
+.m-ttu {
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.block6__list__li {
+    font-size: 20px;
+    line-height: 24px
+}
+
+.block5 {
+    background: #f8f6f7
+}
+
+.block9__img {
+    display: block;
+    margin: 0 auto
+}
+
+.block10 .row {
+    padding: 11px 0 20px 100px;
+    position: relative;
+    min-height: 74px;
+    display: inline-block;
+}
+
+.block10__img {
+    width: 83px;
+    height: 74px;
+    background: url(../images/img-m-block10__img.jpg);
+    border: 3px solid #d87a72;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -42px;
+}
+
+.block10__img--2 {
+    background-position: left center
+}
+
+.block10__img--3 {
+    background-position: left bottom
+}
+
+.block11 {
+    background: #f8f7f7
+}
+
+.block11__smallcap {
+    display: block;
+    padding: 20px 0 0 0;
+    font-size: 19px
+}
+
+.block14__prod {
+    left: auto;
+    right: 0;
+    position: absolute;
+    top: 23px;
+}
+
+.block14__sale {
+    top: -41px;
+    left: 70px;
+}
+
+
+
+.block14__cap {
+    width: 57%;
+    padding-bottom: 20px;
+    font-size:25px!important;
+    line-height:1.2!important;
+}
+#command{
+    position: static;
+    margin: 30px auto;
+    float: none;
+}
+.oldform
+{
+    position: static;
+    margin: 90px auto 0;
+}
+
+.block11 .prod {
+    position: absolute;
+    right: 0;
+    top: -30px
+}
+
+.block11 .button {
+    clear: both;
+    margin: 0 auto;
+    float: none;
+}
+
+.block11__cap {
+    font-size: 25px;
+    line-height: 38px;
+    padding-bottom: 20px
+}
+
+.block11__cap, .block11__smallcap {
+    width: 50%;
+}
+
+@media only screen and (max-width: 640px) {
+    .dtable-cell{
+        font-size:15px!important;
+    }
+    .logo {
+        font-size: 35px;
+        line-height: 40px;
+        display: block;
+        width: 100%;
+        text-align: center
+    }
+
+    .block9__set__cap {
+        max-width: 150px;
+        display: block;
+        margin: 0 auto
+    }
+
+    .block11__cap {
+        font-size: 28px
+    }
+
+    .sale {
+        left: 60px !important;
+    }
+
+    .leave, .block1__prod .leave {
+        display: none !important;
+    }
+
+    .block0 {
+        height: 38px;
+        min-height: 38px
+    }
+
+    .block0__cap {
+        display: none
+    }
+
+ 
+
+    .block2__info {
+        border: none
+    }
+}
